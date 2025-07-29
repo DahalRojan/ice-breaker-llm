@@ -22,7 +22,7 @@ def lookup(name: str) -> str:
     #     _api_key=os.environ["OPENAI_API_KEY"],
     # )
     llm = ChatOllama(model="llama3.1")
-    template = """given the full name {name_of_person} I want you to get it me a link to their Linkedin profile page url in the format https://www.linkedin.com/in/UserName.
+    template = """given the full name {name_of_person} I want you to get it me a link to their Linkedin profile page url.
                           Your answer should contain only a URL"""
 
     prompt_template = PromptTemplate(
